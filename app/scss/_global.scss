@@ -1,0 +1,14 @@
+@import 'vars';
+@import 'fonts';
+
+body {
+  @extend %roboto-400;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

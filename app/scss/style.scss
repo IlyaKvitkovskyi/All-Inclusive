@@ -1,0 +1,152 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+// HEADER
+.header {
+ 
+  &__inner {
+    
+    height: 135px;
+  }
+  &__socials {
+    display: flex;
+    height: 50;
+    background-color: black;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  &__socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__socials-menu {
+    display: flex;
+  }
+  &__socials-item-first,
+  &__socials-phone,
+  &__socials-address {
+    font-size: 14px;
+  }
+  &__socials-phone,
+  &__socials-address,
+  &__socials-language-links {
+    color: #fff;
+  }
+  &__socials-phone {
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+  }
+  &__socials-address {
+    position: relative;
+  }
+  &__socials-phone::before {
+    content: url('../images/tel.svg');
+    top: 0;
+    left: -20px;
+    position: absolute;
+  }
+
+  &__socials-address::before {
+    content: url('../images/location-pin.svg');
+    top: 0;
+    left: -20px;
+    position: absolute;
+  }
+
+  &__socials-item-first {
+    color: #fff;
+  }
+  &__socials-link {
+    margin-right: 30px;
+  }
+  &__socials-item-first {
+    margin-right: 10px;
+  }
+  &__socials-item {
+    margin-right: 5px;
+  }
+  &__socials-item-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 2px;
+  }
+  &__socials-language {
+    padding-right: 10px;
+  }
+  &__socials-slash {
+    color: #fff;
+  }
+  &__socials-language-links:hover {
+    color: #ca9546;
+    transition: all 0.3s;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+
+  ul.header__bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  }
+  &__bottom-menu-link {
+    @extend %roboto-500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #e8e8e8;
+  }
+  &__bottom-menu-link:hover {
+    color: #ca9546;
+    transition: all 0.3s;
+  }
+  &__bottom-logo {
+    position: relative;
+    left: -10%;
+  }
+}
+
+.header__bottom-item {
+  margin-right: 30px;
+}
+
+.header__bottom-item:nth-child(6) {
+  margin-right: 10px;
+}
+// /.HEADER
+
+// INTRO
+.intro {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// /.INTRO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'media';
