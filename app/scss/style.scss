@@ -91,7 +91,9 @@
   display: flex;
   align-items: center;
   height: 90px;
+  background: rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 4px rgba(#000, 0.25);
+  z-index: 1;
 }
 
 .header__inner {
@@ -126,6 +128,113 @@
 }
 // /.HEADER
 
+
+// INTRO
+.intro {
+  padding-top: 190px;
+  margin-top: -90px;
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 100vh;
+
+  .slider-wrapper {
+    position: relative;
+    margin-bottom: 65px;
+  }
+
+  .slider-intro__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-intro__img {
+    flex-basis: 45%;
+  }
+
+  .slider-intro__content {
+    flex-basis: 50%;
+  }
+
+  .slider-intro__content {
+    margin-left: 5%;
+
+    .title {
+      font-size: 56px;
+      line-height: 67px;
+      color: #ffffff;
+      @extend %roboto-700;
+      margin-bottom: 15px;
+    }
+
+    .text {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.02em;
+      color: #e8e8e8;
+      @extend %roboto-400;
+      margin-bottom: 25px;
+    }
+  }
+
+  .dots {
+    margin-bottom: 90px;
+  }
+
+  .btn-intro {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 33px;
+    height: 45px;
+    background: url('../images/arrow-left.svg') no-repeat 50% 50%;
+
+    &--prev {
+      transform: translateY(-50%);
+      right: 100%;
+    }
+
+    &--next {
+      left: 100%;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  .register-changes {
+    display: flex;
+    justify-content: center;
+
+    &__img {
+      width: 167px;
+      height: 167px;
+      display: block;
+    }
+
+    &__item {
+      width: 330px;
+      height: 235px;
+      background: rgba(39, 39, 39, 0.6);
+      padding: 4px 60px 40px 60px;
+
+      &--second {
+        background: rgba(29, 29, 29, 0.6);
+      }
+
+      &--third {
+        background: rgba(22, 22, 22, 0.6);
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.02em;
+      color: #ca9546;
+    }
+  }
+}
+// /.INTRO
 
 // FOOTER
 .footer {
@@ -170,7 +279,7 @@
 
   &:hover {
     text-decoration: underline;
-    transition: .2s linear;
+    transition: 0.2s linear;
   }
 }
 

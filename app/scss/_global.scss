@@ -23,8 +23,49 @@ body {
   min-height: 100vh;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ca9546;
+    border-radius: 50%;
+
+    &--active {
+      background-color: #ca9546;
+    }
+
+    & + & {
+      margin-left: 8px;
+    }
+  }
+}
+
+.btn {
+  padding: 15px 30px 15px 30px;
+  border: 1px solid #ca9546;
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  @extend %roboto-500;
+  transition: .2s linear;
+
+  &:hover {
+    background-color: #CA9546;
+  }
+}
+
+.btn + .btn {
+  margin-left: 15px;
+}
+
 .footer {
   margin-top: auto;
 }
-
-
