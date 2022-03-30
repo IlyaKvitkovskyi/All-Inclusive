@@ -13,11 +13,21 @@ document.querySelectorAll('.accordion-item__trigger').forEach((item) =>
   }),
 );
 
-let swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 75,
+let swiper1 = new Swiper('.slider-intro-container', {
+  loop: true,
+
   pagination: {
-    el: ".swiper-pagination",
+    el: '.intro .dots',
     clickable: true,
   },
+
+  navigation: {
+    nextEl: '.intro .swiper-button-next',
+    prevEl: '.intro .swiper-button-prev',
+  },
+});
+
+let swiper = new Swiper('.mySwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 75,
 });

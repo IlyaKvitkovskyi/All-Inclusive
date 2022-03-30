@@ -130,21 +130,33 @@
 
 // INTRO
 .intro {
-  padding-top: 190px;
   margin-top: -90px;
   background-image: url('../images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .intro-slider {
+    position: relative;
+  }
 
   .slider-wrapper {
     position: relative;
+    overflow: hidden;
     margin-bottom: 65px;
+  }
+
+  .slider-intro {
+    display: flex;
   }
 
   .slider-intro__item {
     display: flex;
+    min-width: 100%;
     align-items: center;
   }
 
@@ -449,6 +461,7 @@
 }
 // /.Reviews-slider
 
+// News
 .news {
   padding-bottom: 75px;
 
@@ -542,6 +555,7 @@
     margin-left: 30px;
   }
 }
+// /.News
 
 // FOOTER
 .footer {

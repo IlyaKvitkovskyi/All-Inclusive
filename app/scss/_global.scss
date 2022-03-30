@@ -54,6 +54,25 @@ body {
   }
 }
 
+.swiper-pagination-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid #ca9546;
+  border-radius: 50%;
+
+  &-active {
+    background-color: #ca9546;
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
 .btn {
   padding: 15px 30px 15px 30px;
   border: 1px solid #ca9546;
