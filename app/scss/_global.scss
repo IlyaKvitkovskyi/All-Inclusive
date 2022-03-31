@@ -23,6 +23,11 @@ body {
   min-height: 100vh;
 }
 
+.intro-breadcrumbs {
+  display: block;
+  background: url("../images/bg-2.jpg") no-repeat;
+}
+
 .title {
   @extend %roboto-500;
   font-size: 42px;
@@ -91,6 +96,35 @@ body {
 
 .btn + .btn {
   margin-left: 15px;
+}
+
+ul.breadcrumbs {
+  padding-top: 200px;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: '>';
+  margin: 0 5px;
+}
+
+.breadcrumbs__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  @extend %roboto-500;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs__link--active {
+  color:#ca9546;
 }
 
 .footer {

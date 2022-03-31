@@ -1,0 +1,53 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.about__item {
+  display: flex;
+  margin-bottom: 140px;
+  
+  &--second {
+    flex-direction: row-reverse;
+  }
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-right {
+  position: relative;
+  width: 50%;
+  margin-left: 50px;
+
+  &--second {
+    margin-right: 50px;
+    margin-left: 0;
+  }
+}
+
+.about__name {
+  font-size: 34px;
+  line-height: 48px;
+  color: #ffffff;
+  @extend %roboto-500;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #e8e8e8;
+  @extend %roboto-400;
+}
+
+.about__social {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.about__social-item + .about__social-item {
+  margin-left: 15px;
+}
