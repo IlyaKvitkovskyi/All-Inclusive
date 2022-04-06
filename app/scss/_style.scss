@@ -14,6 +14,7 @@
     justify-content: space-between;
   }
 }
+
 .social-wrapper {
   display: flex;
   align-items: baseline;
@@ -139,6 +140,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  padding-top: 150px;
 
   .intro-slider {
     position: relative;

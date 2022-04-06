@@ -8,6 +8,7 @@ body {
   @extend %roboto-400;
   background-color: #000;
   color: #fff;
+  letter-spacing: 0.02em;
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
 .intro-breadcrumbs {
   display: block;
   background: url("../images/bg-2.jpg") no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -99,7 +101,6 @@ body {
 }
 
 ul.breadcrumbs {
-  padding-top: 200px;
   margin-bottom: 40px;
 }
 
