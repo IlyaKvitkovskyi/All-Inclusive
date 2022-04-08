@@ -106,3 +106,9 @@ ul.text-list--first {
 .text-list__item:nth-last-child(-n + 1) {
   margin-bottom: 0;
 }
+
+.tabs-nav__item.is-active {
+  .content__item-link {
+    color: #ca9546;
+  }
+}

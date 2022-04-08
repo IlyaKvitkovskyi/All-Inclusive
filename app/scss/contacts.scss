@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'style';
+
+.intro {
+  justify-content: flex-start;
+  background-image: url('../images/bg-2.jpg');
+}
+
+.contacts {
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__days,
+  &__time {
+    margin-bottom: 5px;
+  }
+
+  &__days,
+  &__time,
+  &__weekend {
+    @extend %roboto-700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+  }
+
+  &__subtime {
+    @extend %roboto-500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #a4a4a4;
+    margin-bottom: 15px;
+  }
+}
