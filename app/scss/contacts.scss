@@ -10,9 +10,12 @@
 }
 
 .contacts {
+  padding-bottom: 125px;
+
   .subtitle {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   &__days,
@@ -39,3 +42,228 @@
     margin-bottom: 15px;
   }
 }
+
+// FORM
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+
+  &__label {
+    border-bottom: 1px solid #a4a4a4;
+    margin-bottom: 65px;
+  }
+
+  &__input,
+  &__textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 7px;
+    color: #fff;
+  }
+
+  &__input::placeholder {
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8e8e8e;
+  }
+
+  &__textarea {
+    overflow: hidden;
+    flex-grow: 1;
+    height: 34px;
+    resize: none;
+    border-bottom: 1px solid #a4a4a4;
+    margin-bottom: 50px;
+  }
+
+  &__span {
+    @extend %roboto-400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #8e8e8e;
+  }
+}
+
+// input file
+.example-1 {
+  margin-bottom: 40px;
+}
+
+.example-1 input[type='file'] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.example-1 .label {
+  width: 550px;
+  border: 1px dashed #8e8e8e;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 200px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.example-1 .label i {
+  display: block;
+}
+
+.example-1 .label i,
+.example-1 .label .span-title {
+  font-size: 14px;
+  color: grey;
+}
+
+.span-title {
+  margin-left: 25px;
+}
+
+.span-subtitle {
+  @extend %roboto-400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: #8e8e8e;
+}
+
+.upload-img {
+  width: 24px;
+  height: 24px;
+}
+
+.input-wrapper {
+  width: 0;
+}
+
+.input-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-wrapper {
+  max-width: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+// /.input file
+
+.form-btn {
+  margin-bottom: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ca9546;
+  border: none;
+  outline: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  transition: 0.2s linear;
+}
+
+.form-btn {
+  &:hover,
+  &:focus {
+    background-color: darken(#ca9546, 10%);
+  }
+}
+// /.FORM
+
+// CONTACTS-INFO
+.contacts-inner {
+  display: flex;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.info-graf {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-time,
+.info-subtime,
+.info-weekend {
+  color: #a4a4a4;
+}
+
+.info-time,
+.info-weekend {
+  @extend %roboto-500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.info-subtime {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.info-weekend {
+  margin-bottom: 25px;
+}
+
+.info-title {
+  @extend %roboto-700;
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.info-desc {
+  text-transform: uppercase;
+  @extend %roboto-500;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+  color: #a4a4a4;
+  margin-bottom: 25px;
+}
+
+.info-title__mb {
+  margin-bottom: 25px;
+}
+
+ul.info-list {
+  margin-bottom: 30px;
+}
+
+.info-list__item {
+  @extend %roboto-400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  color: #a4a4a4;
+}
+
+.info-list__item-num {
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+// /.CONTACTS-INFO

@@ -13,6 +13,7 @@ document.querySelectorAll('.accordion-item__trigger').forEach((item) =>
   }),
 );
 
+
 let swiper1 = new Swiper('.slider-intro-container', {
   loop: true,
 
