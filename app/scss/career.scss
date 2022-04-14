@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'style';
+@import 'global';
+
+.title {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.info {
+  @extend %roboto-700;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
