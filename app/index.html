@@ -49,6 +49,16 @@
               <span class="change-language__slash">/</span>
               <a class="change-language__link" href="#">ENG</a>
             </div>
+
+            <div class="burger-wrap">
+              <a class="burger-search" href="#">
+                <img src="images/big-search.svg" alt="search icon" />
+              </a>
+
+              <div class="top-header__burger">
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -59,23 +69,23 @@
           <div class="header__inner">
             <img class="header__logo" src="images/logo.png" alt="Logo" />
 
-            <ul class="header-menu">
+            <ul class="header-menu header-menu__bottom">
               <li class="header-menu__item">
-                <a class="header-menu__link" href="#">О НАС</a>
+                <a class="header-menu__link" href="about_us.html">О НАС</a>
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link" href="#">ПРАЙС-ЛИСТ</a>
+                <a class="header-menu__link" href="price.html">ПРАЙС-ЛИСТ</a>
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link" href="#">КАРЬЕРА</a>
+                <a class="header-menu__link" href="career.html">КАРЬЕРА</a>
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link" href="#">КОНТАКТЫ</a>
+                <a class="header-menu__link" href="contacts.html">КОНТАКТЫ</a>
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link" href="#">КАРТА САЙТА</a>
+                <a class="header-menu__link" href="site-map.html">КАРТА САЙТА</a>
               </li>
-              <li class="header-menu__item">
+              <li class="header-menu__item header-menu__item-search">
                 <a class="header-menu__link" href="#">
                   <img src="images/search.svg" alt="search icon" />
                 </a>
@@ -87,14 +97,14 @@
 
       <main class="main">
         <!-- Intro -->
-        <section class="intro">
+        <section class="intro main-intro">
           <div class="container">
             <div class="intro-slider">
               <div class="slider-wrapper slider-intro-container swiper-container">
                 <ul class="slider-intro swiper-wrapper">
                   <li class="slider-intro__item swiper-slide">
                     <div class="slider-intro__content">
-                      <div class="title">ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+                      <div class="title slide-title">ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
                       <div class="text">
                         Профессиональное сопровождение и подход, нацеленный на выйгрышный результат
                       </div>
@@ -146,7 +156,6 @@
               </div>
               <a class="btn-intro btn-intro--prev swiper-button-prev" href="#"></a>
               <a class="btn-intro btn-intro--next swiper-button-next" href="#"></a>
-
             </div>
 
             <ul class="dots swiper-pagination swiper-pagination-bullets"></ul>
@@ -882,6 +891,8 @@
                 </div>
               </div>
             </div>
+
+            <a class="news-top__link--second" href="news.html">СМОТРЕТЬ ВСЕ</a>
           </div>
         </section>
         <!-- /.News -->
@@ -1071,6 +1082,8 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>
