@@ -32,3 +32,19 @@ ul.breadcrumbs {
     text-decoration: underline;
   }
 }
+
+@media (max-width: 767px) {
+  .intro {
+    padding-bottom: 50px;
+  }
+  
+  .intro__inner {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 40px;
+  }
+}

@@ -16,3 +16,9 @@
   line-height: 29px;
   color: #ffffff;
 }
+
+@media (max-width: 1200px) { 
+  .title {
+    padding-bottom: 40px;
+  }
+}
