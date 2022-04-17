@@ -7,7 +7,7 @@
 .about__item {
   display: flex;
   margin-bottom: 140px;
-  
+
   &--second {
     flex-direction: row-reverse;
   }
@@ -51,4 +51,33 @@
 
 .about__social-item + .about__social-item {
   margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  .about__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 70px;
+  }
+
+  .about-left {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-right {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__text {
+    margin-bottom: 50px;
+  }
 }
