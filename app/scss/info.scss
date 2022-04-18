@@ -112,3 +112,53 @@ ul.text-list--first {
     color: #ca9546;
   }
 }
+
+@media (max-width: 1200px) {
+  ul.accordion-left {
+    margin-bottom: 50px;
+  }
+
+  .tabs__content {
+    margin-left: 0;
+    max-width: 800px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .services-accordion {
+    padding-bottom: 50px;
+  }
+
+  ul.accordion-left .accordion-item {
+    width: 350px;
+  }
+
+  ul.accordion-left .accordion-item__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  ul.accordion-left .content__item-link {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .services-accordion .accordion-item {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .tab__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .tab__text p {
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
